@@ -1,0 +1,547 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="initial-scale=1, user-scalable=no, width=device-width, ">
+        <link type="text/css" rel="stylesheet" href="stylesheet.css" />
+        <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    </head>
+    <body>
+               
+        <!-- Homescreen -->
+        <div data-role="page" id="homescreenSUB" data-theme="a">
+            <div data-role="header">
+                <a href="#homescreenML" data-role="button" class="ui-btn-left" data-inline="true">Mas List</a>
+                <center style="font-size:34px">To Buy</center>
+                <a href="#homescreenSUB" data-role="button" class="ui-btn-right" data-inline="true">To Buy</a>
+            </div>
+            <div role="main" class="ui-content">
+                <a href="#allitemsSUB" data-role="button" id="allitemsDisp">All Items</a>
+                <br>
+                <a href="#safewaySUB" data-role="button" id="safewayDisp">Safeway</a>
+                <a href="#patelbrosSUB" data-role="button" id="patelbrosDisp">Patel Bros</a>
+                <a href="#costcoSUB" data-role="button" id="costcoDisp">CostCo</a>
+                <a href="#amazonSUB" data-role="button" id="amazonDisp">Amazon</a>
+            </div>
+            <div class="footer"><div data-role="footer">
+                <div class="middle"><a href="#instructions" data-role="button">Instructions</a></div>
+            </div></div>
+        </div>
+        <div data-role="page" id="homescreenML" data-theme="a">
+            <div data-role="header">
+                <a href="#homescreenML" data-role="button" class="ui-btn-left" data-inline="true">Mas List</a>
+                <center style="font-size:34px">Master List</center>
+                <a href="#homescreenSUB" data-role="button" class="ui-btn-right" data-inline="true">To Buy</a>
+            </div>
+            <div role="main" class="ui-content">
+                <a href="#allitemsML" data-role="button">All Items</a>
+                <br>
+                <a href="#safewayML" data-role="button">Safeway</a>
+                <a href="#patelbrosML" data-role="button">Patel Bros</a>
+                <a href="#costcoML" data-role="button">CostCo</a>
+                <a href="#amazonML" data-role="button">Amazon</a>
+            </div>
+            <div class="footer"><div data-role="footer">
+                <div class="middle"><a href="#instructions" data-role="button">Instructions</a></div>
+            </div></div>
+        </div>
+
+        
+        
+        <!-- All Items -->
+        <div data-role="page" id="allitemsML" data-theme="a">
+            <div class="header"><div data-role="header">
+                <a href="#allitemsML" data-role="button" class="ui-btn-left" data-inline="true">Mas List</a>
+                <center style="font-size:34px">All Items</center>
+                <a href="#allitemsSUB" data-role="button" class="ui-btn-right" data-inline="true">To Buy</a>
+            </div></div>
+            <div role="main" class="ui-content">
+                <br><br>
+                <strong>Carbs</strong><br>
+                    <div class="lavashbreadML"><button>Lavash Bread</button></div>
+                    <div class="oatsML"><button>Oats</button></div>
+                <strong>Cleaning Products</strong><br>
+                    <div class="dishsoapML"><button>Dish Soap</button></div>
+                    <div class="dishwashertabletsML"><button>Dishwasher Tablets</button></div>
+                    <div class="dryersheetsML"><button>Dryer Sheets</button></div>
+                    <div class="tideML"><button>Tide</button></div>
+                    <div class="trashbagsML"><button>Trash Bags</button></div>
+                <strong>Cold Food</strong><br>
+                    <div class="eggsML"><button>Eggs</button></div>
+                    <div class="mozzarellaML"><button>Mozzarella</button></div>
+                    <div class="yogurtplainML"><button>Yogurt, plain</button></div>
+                <strong>Condiments</strong><br>
+                    <div class="babaganoushML"><button>Baba Ganoush</button></div>
+                    <div class="vinegarML"><button>Balsamic Vinegar</button></div>
+                    <div class="croutonsML"><button>Croutons</button></div>
+                    <div class="garlicpasteML"><button>Garlic Paste</button></div>
+                    <div class="gheeML"><button>Ghee</button></div>
+                    <div class="hummusML"><button>Hummus</button></div>
+                    <div class="italianseasoningML"><button>Italian Seasoning</button></div>
+                    <div class="ketchupML"><button>Ketchup</button></div>
+                    <div class="lemonjuiceML"><button>Lemon Juice</button></div>
+                    <div class="oilML"><button>Oil</button></div>
+                    <div class="soysauceML"><button>Soy Sauce</button></div>
+                <strong>Drinks</strong><br>
+                    <div class="almondmilkML"><button>Almond Milk</button></div>
+                    <div class="proteinpowderML"><button>Protein Powder</button></div>
+                    <div class="redbullML"><button>Redbull</button></div>
+                    <div class="sparklingwaterML"><button>Sparkling Water</button></div>
+                <strong>Frozen Food</strong><br>
+                    <div class="frozenchickenML"><button>Frozen Chicken</button></div>
+                    <div class="frozenpeasML"><button>Frozen Peas</button></div>
+                <strong>Fruits & Veggies</strong><br>
+                    <div class="avocadosML"><button>Avocados</button></div>
+                    <div class="bananasML"><button>Bananas</button></div>
+                    <div class="cauliflowerML"><button>Cauliflower</button></div>
+                    <div class="chilisML"><button>Chilis</button></div>
+                    <div class="eggplantML"><button>Eggplants</button></div>
+                    <div class="onionsML"><button>Onions</button></div>
+                    <div class="tomatoesML"><button>Tomatoes</button></div>
+                <strong>Spices</strong><br>
+                    <div class="fennelML"><button>Fennel</button></div>
+                    <div class="flaxseedsML"><button>Flax Seeds</button></div>
+                    <div class="gingerpowderML"><button>Ginger Powder</button></div>
+                    <div class="mustardseedsML"><button>Mustard Seeds</button></div>
+                    <div class="oldbayML"><button>Old Bay</button></div>
+                    <div class="oreganoML"><button>Oregano</button></div>
+                    <div class="peanutsML"><button>Peanuts</button></div>
+                    <div class="redpepperflakesML"><button>Red Pepper Flakes</button></div>
+                    <div class="saltML"><button>Salt</button></div>
+                    <div class="turmericML"><button>Turmeric</button></div>
+                <strong>Tioletries</strong><br>
+                    <div class="flossML"><button>Floss</button></div>
+                    <div class="mouthwashML"><button>Mouthwash</button></div>
+                    <div class="papertowelsML"><button>Paper Towels</button></div>
+                    <div class="razorsML"><button>Razors</button></div>
+                    <div class="suntanlotionML"><button>Suntan Lotion</button></div>
+                    <div class="toiletpaperML"><button>Toilet Paper</button></div>
+                    <br><br>
+            </div> 
+            <div class="footer"><div data-role="footer">
+                <div class="middle"><a href="#homescreenML" data-role="button">Homescreen</a></div>
+            </div></div>   
+        </div>
+        <div data-role="page" id="allitemsSUB" data-theme="a">
+            <div class="header"><div data-role="header">
+                <a href="#allitemsML" data-role="button" class="ui-btn-left" data-inline="true">Mas List</a>
+                <center style="font-size:34px">All Items</center>
+                <a href="#allitemsSUB" data-role="button" class="ui-btn-right" data-inline="true">To Buy</a>
+            </div></div>
+            <div role="main" class="ui-content">
+                <br><br>
+                <strong>Carbs</strong><br>
+                    <div class="lavashbreadSUB"><button>Lavash Bread</button></div>
+                    <div class="oatsSUB"><button>Oats</button></div>
+                <strong>Cleaning Products</strong><br>
+                    <div class="dishsoapSUB"><button>Dish Soap</button></div>
+                    <div class="dishwashertabletsSUB"><button>Dishwasher Tablets</button></div>
+                    <div class="dryersheetsSUB"><button>Dryer Sheets</button></div>
+                    <div class="tideSUB"><button>Tide</button></div>
+                    <div class="trashbagsSUB"><button>Trash Bags</button></div>
+                <strong>Cold Food</strong><br>
+                    <div class="eggsSUB"><button>Eggs</button></div>
+                    <div class="mozzarellaSUB"><button>Mozzarella</button></div>
+                    <div class="yogurtplainSUB"><button>Yogurt, plain</button></div>
+                <strong>Condiments</strong><br>
+                    <div class="babaganoushSUB"><button>Baba Ganoush</button></div>
+                    <div class="vinegarSUB"><button>Balsamic Vinegar</button></div>
+                    <div class="croutonsSUB"><button>Croutons</button></div>
+                    <div class="garlicpasteSUB"><button>Garlic Paste</button></div>
+                    <div class="gheeSUB"><button>Ghee</button></div>
+                    <div class="hummusSUB"><button>Hummus</button></div>
+                    <div class="italianseasoningSUB"><button>Italian Seasoning</button></div>
+                    <div class="ketchupSUB"><button>Ketchup</button></div>
+                    <div class="lemonjuiceSUB"><button>Lemon Juice</button></div>
+                    <div class="oilSUB"><button>Oil</button></div>
+                    <div class="soysauceSUB"><button>Soy Sauce</button></div>
+                <strong>Drinks</strong><br>
+                    <div class="almondmilkSUB"><button>Almond Milk</button></div>
+                    <div class="proteinpowderSUB"><button>Protein Powder</button></div>
+                    <div class="redbullSUB"><button>Redbull</button></div>
+                    <div class="sparklingwaterSUB"><button>Sparkling Water</button></div>
+                <strong>Frozen Food</strong><br>
+                    <div class="frozenchickenSUB"><button>Frozen Chicken</button></div>
+                    <div class="frozenpeasSUB"><button>Frozen Peas</button></div>
+                <strong>Fruits & Veggies</strong><br>
+                    <div class="avocadosSUB"><button>Avocados</button></div>
+                    <div class="bananasSUB"><button>Bananas</button></div>
+                    <div class="cauliflowerSUB"><button>Cauliflower</button></div>
+                    <div class="chilisSUB"><button>Chilis</button></div>
+                    <div class="eggplantSUB"><button>Eggplants</button></div>
+                    <div class="onionsSUB"><button>Onioins</button></div>
+                    <div class="tomatoesSUB"><button>Tomatoes</button></div>
+                <strong>Spices</strong><br>
+                    <div class="fennelSUB"><button>Fennel</button></div>
+                    <div class="flaxseedsSUB"><button>Flax Seeds</button></div>
+                    <div class="gingerpowderSUB"><button>Ginger Powder</button></div>
+                    <div class="mustardseedsSUB"><button>Mustard Seeds</button></div>
+                    <div class="oldbaySUB"><button>Old Bay</button></div>
+                    <div class="oreganoSUB"><button>Oregano</button></div>
+                    <div class="peanutsSUB"><button>Peanuts</button></div>
+                    <div class="redpepperflakesSUB"><button>Red Pepper Flakes</button></div>
+                    <div class="saltSUB"><button>Salt</button></div>
+                    <div class="turmericSUB"><button>Turmeric</button></div>
+                <strong>Tioletries</strong><br>
+                    <div class="flossSUB"><button>Floss</button></div>
+                    <div class="mouthwashSUB"><button>Mouthwash</button></div>
+                    <div class="papertowelsSUB"><button>Paper Towels</button></div>
+                    <div class="razorsSUB"><button>Razors</button></div>
+                    <div class="suntanlotionSUB"><button>Suntan Lotion</button></div>
+                    <div class="toiletpaperSUB"><button>Toilet Paper</button></div>
+                    <br><br>
+            </div>
+            <div class="footer"><div data-role="footer">
+                <div class="middle"><a href="#homescreenSUB" data-role="button">Homescreen</a></div>
+            </div></div>  
+        </div>
+        
+        <!-- Safeway -->
+        <div data-role="page" id="safewayML" data-theme="a" >
+            <div class="header"><div data-role="header">
+                <a href="#safewayML" data-role="button" class="ui-btn-left" data-inline="true">Mas List</a>
+                <center style="font-size:34px">Safeway</center>
+                <a href="#safewaySUB" data-role="button" class="ui-btn-right" data-inline="true">To Buy</a>
+            </div></div>
+            <div role="main" class="ui-content">
+                <br><br>
+                <strong>Carbs</strong><br>
+                    <div class="lavashbreadML"><button>Lavash Bread</button></div>
+                    <div class="oatsML"><button>Oats</button></div>
+                <strong>Cleaning Products</strong><br>
+                    <div class="dishsoapML"><button>Dish Soap</button></div>
+                    <div class="dishwashertabletsML"><button>Dishwasher Tablets</button></div>
+                    <div class="dryersheetsML"><button>Dryer Sheets</button></div>
+                    <div class="tideML"><button>Tide</button></div>
+                    <div class="trashbagsML"><button>Trash Bags</button></div>
+                <strong>Cold Food</strong><br>
+                    <div class="eggsML"><button>Eggs</button></div>
+                    <div class="mozzarellaML"><button>Mozzarella</button></div>
+                    <div class="yogurtplainML"><button>Yogurt, plain</button></div>
+                <strong>Condiments</strong><br>
+                    <div class="babaganoushML"><button>Baba Ganoush</button></div>
+                    <div class="vinegarML"><button>Balsamic Vinegar</button></div>
+                    <div class="croutonsML"><button>Croutons</button></div>
+                    <div class="garlicpasteML"><button>Garlic Paste</button></div>
+                    <div class="hummusML"><button>Hummus</button></div>
+                    <div class="italianseasoningML"><button>Italian Seasoning</button></div>
+                    <div class="ketchupML"><button>Ketchup</button></div>
+                    <div class="lemonjuiceML"><button>Lemon Juice</button></div>
+                    <div class="oilML"><button>Oil</button></div>
+                    <div class="soysauceML"><button>Soy Sauce</button></div>
+                <strong>Drinks</strong><br>
+                    <div class="almondmilkML"><button>Almond Milk</button></div>
+                    <div class="sparklingwaterML"><button>Sparkling Water</button></div>
+                <strong>Frozen Food</strong><br>
+                    <div class="frozenchickenML"><button>Frozen Chicken</button></div>
+                    <div class="frozenpeasML"><button>Frozen Peas</button></div>
+                <strong>Fruits & Veggies</strong><br>
+                    <div class="avocadosML"><button>Avocados</button></div>
+                    <div class="bananasML"><button>Bananas</button></div>
+                    <div class="cauliflowerML"><button>Cauliflower</button></div>
+                    <div class="chilisML"><button>Chilis</button></div>
+                    <div class="eggplantML"><button>Eggplants</button></div>
+                    <div class="onionsML"><button>Onions</button></div>
+                    <div class="tomatoesML"><button>Tomatoes</button></div>
+                <strong>Spices</strong><br>
+                    <div class="fennelML"><button>Fennel</button></div>
+                    <div class="flaxseedsML"><button>Flax Seeds</button></div>
+                    <div class="gingerpowderML"><button>Ginger Powder</button></div>
+                    <div class="mustardseedsML"><button>Mustard Seeds</button></div>
+                    <div class="oldbayML"><button>Old Bay</button></div>
+                    <div class="oreganoML"><button>Oregano</button></div>
+                    <div class="peanutsML"><button>Peanuts</button></div>
+                    <div class="redpepperflakesML"><button>Red Pepper Flakes</button></div>
+                    <div class="saltML"><button>Salt</button></div>
+                <strong>Tioletries</strong><br>
+                    <div class="flossML"><button>Floss</button></div>
+                    <div class="razorsML"><button>Razors</button></div>
+                    <div class="suntanlotionML"><button>Suntan Lotion</button></div>
+                    <br><br>
+            </div>
+            <div class="footer"><div data-role="footer">
+                <div class="middle"><a href="#homescreenML" data-role="button">Homescreen</a></div>
+            </div></div>
+        </div>
+        <div data-role="page" id="safewaySUB" data-theme="a" >
+            <div class="header"><div data-role="header">
+                <a href="#safewayML" data-role="button" class="ui-btn-left" data-inline="true">Mas List</a>
+                <center style="font-size:34px">Safeway</center>
+                <a href="#safewaySUB" data-role="button" class="ui-btn-right" data-inline="true">To Buy</a>
+                </div></div>
+            <div role="main" class="ui-content">
+                <br><br>
+                <strong>Carbs</strong><br>
+                    <div class="lavashbreadSUB"><button>Lavash Bread</button></div>
+                    <div class="oatsSUB"><button>Oats</button></div>
+                <strong>Cleaning Products</strong><br>
+                    <div class="dishsoapSUB"><button>Dish Soap</button></div>
+                    <div class="dishwashertabletsSUB"><button>Dishwasher Tablets</button></div>
+                    <div class="dryersheetsSUB"><button>Dryer Sheets</button></div>
+                    <div class="tideSUB"><button>Tide</button></div>
+                    <div class="trashbagsSUB"><button>Trash Bags</button></div>
+                <strong>Cold Food</strong><br>
+                    <div class="eggsSUB"><button>Eggs</button></div>
+                    <div class="mozzarellaSUB"><button>Mozzarella</button></div>
+                    <div class="yogurtplainSUB"><button>Yogurt, plain</button></div>
+                <strong>Condiments</strong><br>
+                    <div class="babaganoushSUB"><button>Baba Ganoush</button></div>
+                    <div class="vinegarSUB"><button>Balsamic Vinegar</button></div>
+                    <div class="croutonsSUB"><button>Croutons</button></div>
+                    <div class="garlicpasteSUB"><button>Garlic Paste</button></div>
+                    <div class="hummusSUB"><button>Hummus</button></div>
+                    <div class="italianseasoningSUB"><button>Italian Seasoning</button></div>
+                    <div class="ketchupSUB"><button>Ketchup</button></div>
+                    <div class="lemonjuiceSUB"><button>Lemon Juice</button></div>
+                    <div class="oilSUB"><button>Oil</button></div>
+                    <div class="soysauceSUB"><button>Soy Sauce</button></div>
+                <strong>Drinks</strong><br>
+                    <div class="almondmilkSUB"><button>Almond Milk</button></div>
+                    <div class="sparklingwaterSUB"><button>Sparkling Water</button></div>
+                <strong>Frozen Food</strong><br>
+                    <div class="frozenchickenSUB"><button>Frozen Chicken</button></div>
+                    <div class="frozenpeasSUB"><button>Frozen Peas</button></div>
+                <strong>Fruits & Veggies</strong><br>
+                    <div class="avocadosSUB"><button>Avocados</button></div>
+                    <div class="bananasSUB"><button>Bananas</button></div>
+                    <div class="cauliflowerSUB"><button>Cauliflower</button></div>
+                    <div class="chilisSUB"><button>Chilis</button></div>
+                    <div class="eggplantSUB"><button>Eggplants</button></div>
+                    <div class="onionsSUB"><button>Onioins</button></div>
+                    <div class="tomatoesSUB"><button>Tomatoes</button></div>
+                <strong>Spices</strong><br>
+                    <div class="fennelSUB"><button>Fennel</button></div>
+                    <div class="flaxseedsSUB"><button>Flax Seeds</button></div>
+                    <div class="gingerpowderSUB"><button>Ginger Powder</button></div>
+                    <div class="mustardseedsSUB"><button>Mustard Seeds</button></div>
+                    <div class="oldbaySUB"><button>Old Bay</button></div>
+                    <div class="oreganoSUB"><button>Oregano</button></div>
+                    <div class="peanutsSUB"><button>Peanuts</button></div>
+                    <div class="redpepperflakesSUB"><button>Red Pepper Flakes</button></div>
+                    <div class="saltSUB"><button>Salt</button></div>
+                <strong>Tioletries</strong><br>
+                    <div class="flossSUB"><button>Floss</button></div>
+                    <div class="razorsSUB"><button>Razors</button></div>
+                    <div class="suntanlotionSUB"><button>Suntan Lotion</button></div>
+                    <br><br>
+            </div> 
+            <div class="footer"><div data-role="footer">
+                <div class="middle"><a href="#homescreenSUB" data-role="button">Homescreen</a></div>
+            </div></div>
+        </div>
+        
+        <!-- Patel Bros -->
+        <div data-role="page" id="patelbrosML" data-theme="a">
+            <div class="header"><div data-role="header">
+                <a href="#patelbrosML" data-role="button" class="ui-btn-left" data-inline="true">Mas List</a>
+                <center style="font-size:34px">Patel Bros</center>
+                <a href="#patelbrosSUB" data-role="button" class="ui-btn-right" data-inline="true">To Buy</a>
+                </div></div>
+            <div role="main" class="ui-content">
+                <br><br>
+                <strong>Condiments</strong><br>
+                    <div class="gheeML"><button>Ghee</button></div>
+                <strong>Fruits & Veggies</strong><br>
+                    <div class="eggplantML"><button>Eggplants</button></div>
+                <strong>Spices</strong><br>
+                    <div class="fennelML"><button>Fennel</button></div>
+                    <div class="flaxseedsML"><button>Flax Seeds</button></div>
+                    <div class="gingerpowderML"><button>Ginger Powder</button></div>
+                    <div class="mustardseedsML"><button>Mustard Seeds</button></div>
+                    <div class="peanutsML"><button>Peanuts</button></div>
+                    <div class="turmericML"><button>Turmeric</button></div>
+                    <br><br>
+            </div> 
+            <div class="footer"><div data-role="footer">
+                <div class="middle"><a href="#homescreenML" data-role="button">Homescreen</a></div>
+            </div></div>   
+        </div>
+        <div data-role="page" id="patelbrosSUB" data-theme="a">
+            <div class="header"><div data-role="header">
+                <a href="#patelbrosML" data-role="button" class="ui-btn-left" data-inline="true">Mas List</a>
+                <center style="font-size:34px">Patel Bros</center>
+                <a href="#patelbrosSUB" data-role="button" class="ui-btn-right" data-inline="true">To Buy</a>
+                </div></div>
+            <div role="main" class="ui-content">
+                <br><br>
+                <strong>Condiments</strong><br>
+                    <div class="gheeSUB"><button>Ghee</button></div>
+                <strong>Fruits & Veggies</strong><br>
+                    <div class="eggplantSUB"><button>Eggplants</button></div>
+                <strong>Spices</strong><br>
+                    <div class="fennelSUB"><button>Fennel</button></div>
+                    <div class="flaxseedsSUB"><button>Flax Seeds</button></div>
+                    <div class="gingerpowderSUB"><button>Ginger Powder</button></div>
+                    <div class="mustardseedsSUB"><button>Mustard Seeds</button></div>
+                    <div class="peanutsSUB"><button>Peanuts</button></div>
+                    <div class="turmericSUB"><button>Turmeric</button></div>
+                    <br><br>
+            </div>
+            <div class="footer"><div data-role="footer">
+                <div class="middle"><a href="#homescreenSUB" data-role="button">Homescreen</a></div>
+            </div></div>
+        </div>
+        
+        <!-- CostCo -->
+        <div data-role="page" id="costcoML" data-theme="a">
+            <div class="header"><div data-role="header">
+                <a href="#costcoML" data-role="button" class="ui-btn-left" data-inline="true">Mas List</a>
+                <center style="font-size:34px">CostCo</center>
+                <a href="#costcoSUB" data-role="button" class="ui-btn-right" data-inline="true">To Buy</a>
+                </div></div>
+            <div role="main" class="ui-content">
+                <br><br>
+                <strong>Carbs</strong><br>
+                    <div class="lavashbreadML"><button>Lavash Bread</button></div>
+                    <div class="oatsML"><button>Oats</button></div>
+                <strong>Cleaning Products</strong><br>
+                    <div class="dishsoapML"><button>Dish Soap</button></div>
+                    <div class="dishwashertabletsML"><button>Dishwasher Tablets</button></div>
+                    <div class="dryersheetsML"><button>Dryer Sheets</button></div>
+                    <div class="tideML"><button>Tide</button></div>
+                    <div class="trashbagsML"><button>Trash Bags</button></div>
+                <strong>Cold Food</strong><br>
+                    <div class="eggsML"><button>Eggs</button></div>
+                    <div class="mozzarellaML"><button>Mozzarella</button></div>
+                    <div class="yogurtplainML"><button>Yogurt, plain</button></div>
+                <strong>Condiments</strong><br>
+                    <div class="babaganoushML"><button>Baba Ganoush</button></div>
+                    <div class="vinegarML"><button>Balsamic Vinegar</button></div>
+                    <div class="croutonsML"><button>Croutons</button></div>
+                    <div class="garlicpasteML"><button>Garlic Paste</button></div>
+                    <div class="hummusML"><button>Hummus</button></div>
+                    <div class="italianseasoningML"><button>Italian Seasoning</button></div>
+                    <div class="oilML"><button>Oil</button></div>
+                <strong>Drinks</strong><br>
+                    <div class="almondmilkML"><button>Almond Milk</button></div>
+                    <div class="redbullML"><button>Redbull</button></div>
+                    <div class="sparklingwaterML"><button>Sparkling Water</button></div>
+                <strong>Frozen Food</strong><br>
+                    <div class="frozenchickenML"><button>Frozen Chicken</button></div>
+                    <div class="frozenpeasML"><button>Frozen Peas</button></div>
+                <strong>Fruits & Veggies</strong><br>
+                    <div class="avocadosML"><button>Avocados</button></div>
+                    <div class="bananasML"><button>Bananas</button></div>
+                    <div class="cauliflowerML"><button>Cauliflower</button></div>
+                    <div class="chilisML"><button>Chilis</button></div>
+                    <div class="eggplantML"><button>Eggplants</button></div>
+                    <div class="onionsML"><button>Onions</button></div>
+                    <div class="tomatoesML"><button>Tomatoes</button></div>
+                <strong>Tioletries</strong><br>
+                    <div class="flossML"><button>Floss</button></div>
+                    <div class="mouthwashML"><button>Mouthwash</button></div>
+                    <div class="papertowelsML"><button>Paper Towels</button></div>
+                    <div class="razorsML"><button>Razors</button></div>
+                    <div class="toiletpaperML"><button>Toilet Paper</button></div>
+                    <br><br>
+            </div>
+            <div class="footer"><div data-role="footer">
+                <div class="middle"><a href="#homescreenML" data-role="button">Homescreen</a></div>
+            </div></div>  
+        </div>
+        <div data-role="page" id="costcoSUB" data-theme="a">
+            <div class="header"> <div data-role="header">
+                <a href="#costcoML" data-role="button" class="ui-btn-left" data-inline="true">Mas List</a>
+                <center style="font-size:34px">CostCo</center>
+                <a href="#costcoSUB" data-role="button" class="ui-btn-right" data-inline="true">To Buy</a>
+            </div></div>
+            <div role="main" class="ui-content">
+                <br><br>
+                <strong>Carbs</strong><br>
+                    <div class="lavashbreadSUB"><button>Lavash Bread</button></div>
+                    <div class="oatsSUB"><button>Oats</button></div>
+                <strong>Cleaning Products</strong><br>
+                    <div class="dishsoapSUB"><button>Dish Soap</button></div>
+                    <div class="dishwashertabletsSUB"><button>Dishwasher Tablets</button></div>
+                    <div class="dryersheetsSUB"><button>Dryer Sheets</button></div>
+                    <div class="tideSUB"><button>Tide</button></div>
+                    <div class="trashbagsSUB"><button>Trash Bags</button></div>
+                <strong>Cold Food</strong><br>
+                    <div class="eggsSUB"><button>Eggs</button></div>
+                    <div class="mozzarellaSUB"><button>Mozzarella</button></div>
+                    <div class="yogurtplainSUB"><button>Yogurt, plain</button></div>
+                <strong>Condiments</strong><br>
+                    <div class="babaganoushSUB"><button>Baba Ganoush</button></div>
+                    <div class="vinegarSUB"><button>Balsamic Vinegar</button></div>
+                    <div class="croutonsSUB"><button>Croutons</button></div>
+                    <div class="garlicpasteSUB"><button>Garlic Paste</button></div>
+                    <div class="hummusSUB"><button>Hummus</button></div>
+                    <div class="italianseasoningSUB"><button>Italian Seasoning</button></div>
+                    <div class="oilSUB"><button>Oil</button></div>
+                <strong>Drinks</strong><br>
+                    <div class="almondmilkSUB"><button>Almond Milk</button></div>
+                    <div class="redbullSUB"><button>Redbull</button></div>
+                    <div class="sparklingwaterSUB"><button>Sparkling Water</button></div>
+                <strong>Frozen Food</strong><br>
+                    <div class="frozenchickenSUB"><button>Frozen Chicken</button></div>
+                    <div class="frozenpeasSUB"><button>Frozen Peas</button></div>
+                <strong>Fruits & Veggies</strong><br>
+                    <div class="avocadosSUB"><button>Avocados</button></div>
+                    <div class="bananasSUB"><button>Bananas</button></div>
+                    <div class="cauliflowerSUB"><button>Cauliflower</button></div>
+                    <div class="chilisSUB"><button>Chilis</button></div>
+                    <div class="eggplantSUB"><button>Eggplants</button></div>
+                    <div class="onionsSUB"><button>Onioins</button></div>
+                    <div class="tomatoesSUB"><button>Tomatoes</button></div>
+                <strong>Tioletries</strong><br>
+                    <div class="flossSUB"><button>Floss</button></div>
+                    <div class="mouthwashSUB"><button>Mouthwash</button></div>
+                    <div class="papertowelsSUB"><button>Paper Towels</button></div>
+                    <div class="razorsSUB"><button>Razors</button></div>
+                    <div class="toiletpaperSUB"><button>Toilet Paper</button></div>
+                    <br><br>
+            </div>
+            <div class="footer"><div data-role="footer">
+                <div class="middle"><a href="#homescreenSUB" data-role="button">Homescreen</a></div>
+            </div></div>
+        </div>
+        
+        <!-- Amazon -->
+        <div data-role="page" id="amazonML" data-theme="a">
+            <div class="header"><div data-role="header">
+                <a href="#amazonML" data-role="button" class="ui-btn-left" data-inline="true">Mas List</a>
+                <center style="font-size:34px">Amazon</center>
+                <a href="#amazonSUB" data-role="button" class="ui-btn-right" data-inline="true">To Buy</a>
+            </div></div>
+            <div role="main" class="ui-content">
+                <strong>Drinks</strong><br>
+                    <div class="proteinpowderML"><button>Protein Powder</button></div>
+            </div>
+            <div class="footer"><div data-role="footer">
+                <div class="middle"><a href="#homescreenML" data-role="button">Homescreen</a></div>
+            </div></div>    
+        </div>
+        <div data-role="page" id="amazonSUB" data-theme="a">
+            <div class="header"><div data-role="header">
+                <a href="#amazonML" data-role="button" class="ui-btn-left" data-inline="true">Mas List</a>
+                <center style="font-size:34px">Amazon</center>
+                <a href="#amazonSUB" data-role="button" class="ui-btn-right" data-inline="true">To Buy</a>
+            </div></div>
+            <div role="main" class="ui-content">
+                <strong>Drinks</strong><br>
+                    <div class="proteinpowderSUB"><button>Protein Powder</button></div>
+            </div>
+            <div class="footer"><div data-role="footer">
+                <div class="middle"><a href="#homescreenSUB" data-role="button">Homescreen</a></div>
+            </div></div>
+        </div>
+        
+        <div data-role="page" id="instructions" data-theme="a">
+            <div class="header"><div data-role="header">
+                <center style="font-size:34px">Instructions</center>
+            </div></div>
+            <div role="main" class="ui-content">
+                (1) Select the groceries you wish to purchase from the various Master Lists<br><br>
+                (2) Those items will appear in the corresponding store pages<br><br>
+                (3) When you purchase the item, press the button on the "To Buy" lists to make them disappear
+            </div>
+            <div class="footer"><div data-role="footer">
+                <div class="middle"><a href="#homescreenSUB" data-role="button">Close</a></div>
+            </div></div>    
+        </div>
+        
+        <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <script src="script.js" type="text/javascript"></script>
+        
+    </body>
+</html>

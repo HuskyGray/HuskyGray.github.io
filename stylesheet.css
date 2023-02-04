@@ -1,0 +1,26 @@
+#homescreenML,#allitemsML,#safewayML,#patelbrosML,#costcoML,#amazonML{
+    background-color: mistyrose
+}
+
+#homescreenSUB,#allitemsSUB,#safewaySUB,#patelbrosSUB,#costcoSUB,#amazonSUB{
+    background-color: lightblue
+}
+
+.middle{
+    margin-left: 40%;
+}
+
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
